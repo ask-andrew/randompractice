@@ -2,15 +2,18 @@
   "name": "sax-practice-tool",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ask-andrew.github.io/randompractice/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "abcjs": "^6.2.0" 
+    "abcjs": "^6.2.0"
   },
   "scripts": {
-    "start": "echo \"Run this project with a React development server (e.g., using Vite or Create React App)\"",
-    "build": "echo \"Build this project for production\"",
-    "test": "echo \"Run tests\""
+    "start": "react-scripts start",   <-- MODIFIED
+    "build": "react-scripts build",   <-- MODIFIED
+    "test": "react-scripts test",     <-- MODIFIED (if you don't have react-scripts test, just use "echo \"Run tests\"")
+    "predeploy": "npm run build",     <-- ADDED
+    "deploy": "gh-pages -d build"     <-- ADDED
   },
   "eslintConfig": {
     "extends": [
