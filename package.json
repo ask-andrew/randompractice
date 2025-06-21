@@ -9,11 +9,11 @@
     "abcjs": "^6.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",   <-- MODIFIED
-    "build": "react-scripts build",   <-- MODIFIED
-    "test": "react-scripts test",     <-- MODIFIED (if you don't have react-scripts test, just use "echo \"Run tests\"")
-    "predeploy": "npm run build",     <-- ADDED
-    "deploy": "gh-pages -d build"     <-- ADDED
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
